@@ -463,16 +463,6 @@ export const songs = [
     image: "/images/Lover.jpg",
     audio: "/music/Lover/Daylight.mp3"
   },
-   {
-    id: 52,
-    title: "",
-    trackNumber: 18,
-    artist: "Taylor Swift",
-    album: "Lover",
-    image: "/images/Lover.jpg",
-    audio: "/music/Lover/Daylight.mp3"
-  }
-  
 ];
 
 // --- 2. ALBUMS ---
