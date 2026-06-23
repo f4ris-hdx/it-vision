@@ -498,7 +498,7 @@ export const albums = [
   {
     title: "Lover",
     artist: "Taylor Swift",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     year: "2019"
   },
   {
