@@ -301,16 +301,8 @@ export const songs = [
     image: "/images/starboy.jpg",
     audio: "/music/Starboy/All I Know (Audio) ft.Future .mp3"
   },
-    {
-    id: 4,
-    title: "Cruel Summer",
-    trackNumber:2,
-    artist: "Taylor Swift",
-    album: "Lover",
-    image: "/images/Lover.jpg",
-    audio: "/music/Lover/Cruel Summer.mp3"
-  },{
-id: 4, 
+  { 
+    id: 4, 
     title: "Cruel Summer",
     trackNumber:2,
     artist: "Taylor Swift",
@@ -318,7 +310,15 @@ id: 4,
     image: "/images/Lover.jpg",
     audio: "/music/Lover/Cruel Summer.mp3"
   },
-  
+  {
+    id: 35,
+    title: "I Forgot That You Existed",
+    trackNumber: 1,
+    artist: "Taylor Swift",
+    album: "Lover",
+    image: "/images/Lover.jpg",
+    audio: "/music/Lover/I forgot that you existed.mp3"
+  },
   {
     id: 36,
     title: "Lover",
