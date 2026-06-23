@@ -309,15 +309,23 @@ export const songs = [
     album: "Lover",
     image: "/images/Lover.jpg",
     audio: "/music/Lover/Cruel Summer.mp3"
+  },{
+id: 4, 
+    title: "Cruel Summer",
+    trackNumber:2,
+    artist: "Taylor Swift",
+    album: "Lover",
+    image: "/images/Lover.jpg",
+    audio: "/music/Lover/Cruel Summer.mp3"
   },
-
+  
   {
     id: 36,
     title: "Lover",
     trackNumber: 3,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/lover.mp3"
   },
   {
@@ -326,7 +334,7 @@ export const songs = [
     trackNumber: 4,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/The Man.mp3"
   },
   {
@@ -335,7 +343,7 @@ export const songs = [
     trackNumber: 5,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/The Archer.mp3"
   },
   {
@@ -344,7 +352,7 @@ export const songs = [
     trackNumber: 6,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/i think he knows.mp3"
   },
   {
@@ -353,7 +361,7 @@ export const songs = [
     trackNumber: 7,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Miss Americana & The Heartbreak Prince.mp3"
   },
   {
@@ -362,7 +370,7 @@ export const songs = [
     trackNumber: 8,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Paper Rings.mp3"
   },
   {
@@ -371,7 +379,7 @@ export const songs = [
     trackNumber: 9,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Cornelia Street.mp3"
   },
   {
@@ -380,7 +388,7 @@ export const songs = [
     trackNumber: 10,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Death By a Thousand Cuts.mp3"
   },
   {
@@ -389,7 +397,7 @@ export const songs = [
     trackNumber: 11,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/London Boy.mp3"
   },
   {
@@ -398,7 +406,7 @@ export const songs = [
     trackNumber: 12,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Soon You'll Get Better.mp3"
   },
   {
@@ -407,7 +415,7 @@ export const songs = [
     trackNumber: 13,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/False God.mp3"
   },
   {
@@ -416,7 +424,7 @@ export const songs = [
     trackNumber: 14,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/You Need To Calm Down.mp3"
   },
     {
@@ -425,7 +433,7 @@ export const songs = [
     trackNumber: 15,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/After Glow.mp3"
   },
   {
@@ -434,7 +442,7 @@ export const songs = [
     trackNumber: 16,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/ME.mp3"
   },
     {
@@ -443,7 +451,7 @@ export const songs = [
     trackNumber: 17,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Its nice to have a friend.mp3"
   },
     {
@@ -452,7 +460,7 @@ export const songs = [
     trackNumber: 18,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Daylight.mp3"
   },
    {
@@ -461,9 +469,10 @@ export const songs = [
     trackNumber: 18,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Daylight.mp3"
-  },
+  }
+  
 ];
 
 // --- 2. ALBUMS ---
