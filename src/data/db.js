@@ -1,5 +1,6 @@
 // src/data/db.js
 
+
 // --- 1. SONGS ---
 export const songs = [
   {
@@ -8,8 +9,8 @@ export const songs = [
     TrackNumber: 1,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/starboy.mp3" 
+    image: "/images/starboy.jpg",
+    audio: "/music/starboy.mp3" 
   },
   
   {
@@ -18,8 +19,8 @@ export const songs = [
     trackNumber: 9,
     artist: "The Weeknd",
     album: "After Hours",
-    image: "/public/images/afterhours.jpg",
-    audio: "/public/music/After Hours/Blinding Lights.mp3"
+    image: "/images/afterhours.jpg",
+    audio: "/music/After Hours/Blinding Lights.mp3"
   },
   {
     id: 3,
@@ -37,7 +38,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/After hours.mp3"
+    audio: "/music/After Hours/After hours.mp3"
   },
   {
     id: 6,
@@ -46,7 +47,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Alone Again.mp3"
+    audio: "/music/After Hours/Alone Again.mp3"
   },
   {
     id: 7,
@@ -55,7 +56,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Scared To Live.mp3"
+    audio: "/music/After Hours/Scared To Live.mp3"
   },
   {
     id: 8,
@@ -64,7 +65,7 @@ export const songs = [
     TrackNumber: 12,
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Repeat After Me.mp3"
+    audio: "/music/After Hours/Repeat After Me.mp3"
   },
    {
     id: 9,
@@ -73,7 +74,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Faith.mp3"
+    audio: "/music/After Hours/Faith.mp3"
   },
    {
     id: 10,
@@ -82,7 +83,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Save Your Tears.mp3"
+    audio: "/music/After Hours/Save Your Tears.mp3"
   },
    {
     id: 11,
@@ -91,7 +92,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Until I Bleed Out.mp3"
+    audio: "/music/After Hours/Until I Bleed Out.mp3"
   },
    {
     id: 12,
@@ -100,7 +101,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Too Late.mp3"
+    audio: "/music/After Hours/Too Late.mp3"
   },
     {
     id: 13,
@@ -109,7 +110,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Hardest To Love.mp3"
+    audio: "/music/After Hours/Hardest To Love.mp3"
   },
     {
     id: 14,
@@ -118,7 +119,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Snowchild.mp3"
+    audio: "/music/After Hours/Snowchild.mp3"
   },
     {
     id: 15,
@@ -127,7 +128,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Escape From LA.mp3"
+    audio: "/music/After Hours/Escape From LA.mp3"
   },
     {
     id: 16,
@@ -136,7 +137,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/Heartless.mp3"
+    audio: "/music/After Hours/Heartless.mp3"
   },
     {
     id: 17,
@@ -145,7 +146,7 @@ export const songs = [
     artist: "The Weeknd",
     album: "After Hours",
     image: "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Weeknd_-_After_Hours.png",
-    audio: "/public/music/After Hours/In Your Eyes.mp3"
+    audio: "/music/After Hours/In Your Eyes.mp3"
   },
   {
     id: 18,
@@ -153,8 +154,8 @@ export const songs = [
     trackNumber: 2,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Party Monster.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Party Monster.mp3"
   },
   {
     id: 19,
@@ -162,8 +163,8 @@ export const songs = [
     trackNumber: 3,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/False Alarm.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/False Alarm.mp3"
   },
   {
     id: 20,
@@ -171,8 +172,8 @@ export const songs = [
     trackNumber: 4,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Reminder.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Reminder.mp3"
   },
   {
     id: 21,
@@ -180,8 +181,8 @@ export const songs = [
     trackNumber: 5,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Rockin'.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Rockin'.mp3"
   },
   {
     id: 22,
@@ -189,8 +190,8 @@ export const songs = [
     trackNumber: 6,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Secrets.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Secrets.mp3"
   },
   {
     id: 23,
@@ -198,8 +199,8 @@ export const songs = [
     trackNumber: 7,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/True Colors.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/True Colors.mp3"
   },
   {
     id: 24,
@@ -207,8 +208,8 @@ export const songs = [
     trackNumber: 8,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Stargirl Interlude ft. Lana Del Rey.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Stargirl Interlude ft. Lana Del Rey.mp3"
   },
   {
     id: 25,
@@ -216,8 +217,8 @@ export const songs = [
     trackNumber: 9,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Sidewalks.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Sidewalks.mp3"
   },
   {
     id: 26,
@@ -225,8 +226,8 @@ export const songs = [
     trackNumber: 10,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Six Feet Under.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Six Feet Under.mp3"
   },
    {
     id: 27,
@@ -234,8 +235,8 @@ export const songs = [
     trackNumber: 11,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Love To Lay.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Love To Lay.mp3"
   },
    {
     id: 28,
@@ -243,8 +244,8 @@ export const songs = [
     trackNumber: 12,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/A Lonely Night.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/A Lonely Night.mp3"
   },
    {
     id: 29,
@@ -252,8 +253,8 @@ export const songs = [
     trackNumber: 13,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Attention.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Attention.mp3"
   },
    {
     id: 30,
@@ -261,8 +262,8 @@ export const songs = [
     trackNumber: 14,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Ordinary Life.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Ordinary Life.mp3"
   },
    {
     id: 31,
@@ -270,8 +271,8 @@ export const songs = [
     trackNumber: 15,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Nothing Without You.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Nothing Without You.mp3"
   },
    {
     id: 32,
@@ -279,8 +280,8 @@ export const songs = [
     trackNumber: 16,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/All I Know (Audio) ft.Future .mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/All I Know (Audio) ft.Future .mp3"
   },
   {
     id: 33,
@@ -288,8 +289,8 @@ export const songs = [
     trackNumber: 17,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/Die For You.mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/Die For You.mp3"
   },
   {
     id: 34,
@@ -297,8 +298,8 @@ export const songs = [
     trackNumber: 18,
     artist: "The Weeknd",
     album: "Starboy",
-    image: "/public/images/starboy.jpg",
-    audio: "/public/music/Starboy/All I Know (Audio) ft.Future .mp3"
+    image: "/images/starboy.jpg",
+    audio: "/music/Starboy/All I Know (Audio) ft.Future .mp3"
   },
     {
     id: 4,
@@ -306,18 +307,10 @@ export const songs = [
     trackNumber:2,
     artist: "Taylor Swift",
     album: "Lover",
-    image: "/public/images/Lover.jpg",
+    image: "/images/Lover.jpg",
     audio: "/music/Lover/Cruel Summer.mp3"
   },
-  {
-    id: 35,
-    title: "I Forgot That You Existed",
-    trackNumber: 1,
-    artist: "Taylor Swift",
-    album: "Lover",
-    image: "/public/images/Lover.jpg",
-    audio: "/music/Lover/I forgot that you existed.mp3"
-  },
+
   {
     id: 36,
     title: "Lover",
@@ -544,36 +537,37 @@ export const playlists = [
 export const artists = [
   {
     name: "The Weeknd",
-    image: "/public/images/Weeknd.jpg",
-    header: "/public/images/Backshot.jpg",
+    image: "/images/Weeknd.jpg",
+    header: "/images/Backshot.jpg",
     listeners: "105M",
     bio: "Global superstar known for his dark R&B sound."
   },
   {
     name: "Sabrina Carpenter",
-    image: "/public/images/Sabrina.png",
-    header: "/public/images/Carpenter.jpg",
+    image: "/images/Sabrina.png",
+    header: "/images/Carpenter.jpg",
     listeners: "84M",
     bio: "Pop sensation dominating the charts."
   },
   {
     name: "Taylor Swift",
-    image: "/public/images/Taylor Swift.jpg",
-    header: "/public/images/taylorswif.jpg",
+    image: "/images/Taylor Swift.jpg",
+    header: "/images/taylorswif.jpg",
     listeners: "110M",
     bio: "The music industry titan."
   },
+  
   {
     name: "Kanye West",
-    image: "/public/images/Kanye.jpg",
-    header: "/public/images/ye.jpg",
+    image: "/images/Kanye.jpg",
+    header: "/images/ye.jpg",
     listeners: "80M",
     bio: "Ye"
   },
    {
     name: "Talha Anjum",
-    image: "/public/images/Talha-Anjum.jpg",
-    header: "/public/images/TA.jpg",
+    image: "/images/Talha-Anjum.jpg",
+    header: "/images/TA.jpg",
     listeners: "10M",
     bio: "Mr. Most Streamed"
   }
