@@ -1,0 +1,501 @@
+
+/* 1. FORCE SIMPLE WHITE FONT */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    overflow: hidden; /* No double scrollbars */
+}
+
+/* 2. MAIN LAYOUT GRID */
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* 3. SIDEBAR (Hides on Mobile) */
+.sidebar {
+    background-color: #121212;
+    width: 280px;
+    margin: 8px;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-shrink: 0; /* Prevents shrinking */
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; /* RESPONSIVE: Gone on phones */
+    }
+}
+
+/* 4. MAIN CONTENT AREA */
+.main-content {
+    flex: 1;
+    background-color: #121212;
+    margin: 8px 8px 8px 0; /* Align with sidebar */
+    border-radius: 8px;
+    overflow-y: auto;
+    padding: 20px;
+    padding-bottom: 120px; /* Room for player */
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin: 8px; /* Full width on mobile */
+    }
+}
+
+/* 5. TOP BAR & SEARCH */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    background: #242424;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    color: #fff;
+    width: 300px;
+    font-size: 0.9rem;
+}
+
+/* 6. CARDS (Responsive Grid) */
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #181818;
+    width: 180px;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.card:hover {
+    background-color: #282828;
+}
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* 7. PLAYER BAR (Fixed Bottom) */
+.music-player {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-color: #000;
+    border-top: 1px solid #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 100;
+}
+
+.player-controls i {
+    font-size: 1.2rem;
+    color: #b3b3b3;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.player-controls i:hover {
+    color: #fff;
+}
+
+.play-btn {
+    font-size: 2rem !important; /* Bigger play button */
+    color: #fff !important;
+}
+/* ... desktop styles ... */
+
+/* PLAYER DOCK (Desktop Default) */
+.player-dock {
+  position: fixed;
+  bottom: 0;
+  left: 250px; /* Right of Sidebar */
+  right: 0;
+  height: 70px; /* FIXED HEIGHT */
+  z-index: 2000;
+  background: #181818;
+  border-top: 1px solid #282828;
+}
+
+/* MOBILE STYLES */
+@media (max-width: 900px) {
+  
+  .sidebar { display: none; }
+  
+  /* Make content full width */
+  .content { 
+     margin: 0; 
+     padding-bottom: 150px; /* Space for Player + Nav */
+  }
+
+  /* Bottom Navigation */
+  .bottom-nav {
+    display: flex;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    height: 60px;
+    background: #000;
+    border-top: 1px solid #222;
+    z-index: 3000; /* Highest priority */
+    justify-content: space-around; 
+    align-items: center;
+  }
+
+  /* PLAYER DOCK (Mobile Override) */
+  /* It sits ON TOP of the Bottom Nav */
+  .player-dock {
+    left: 0;
+    bottom: 60px; /* Matches Nav Height */
+    height: 64px;
+    border-bottom: 1px solid #000;
+  }
+}
+
+/* ADD THIS TO THE BOTTOM OF YOUR CSS FILE */
+
+@keyframes aurora-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  margin: 0;
+  /* Deep, expensive-looking gradient: Black -> Deep Purple -> Midnight Blue */
+  background: linear-gradient(-45deg, #000000, #1a0b2e, #110f24, #000000);
+  background-size: 400% 400%;
+  animation: aurora-shift 15s ease infinite;
+  color: white;
+  min-height: 100vh;
+}
+
+/* Define the Slide Up Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Apply it to the main content area */
+.main-content {
+  animation: fadeInUp 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+/* Optional: Stagger animations for lists inside pages */
+.song-row, .card {
+  animation: fadeInUp 0.5s ease backwards;
+}
+/* This makes items load one by one (advanced polish) */
+.song-row:nth-child(1) { animation-delay: 0.1s; }
+.song-row:nth-child(2) { animation-delay: 0.15s; }
+.song-row:nth-child(3) { animation-delay: 0.2s; }
+.song-row:nth-child(4) { animation-delay: 0.25s; }
+/* =========================================
+   THE "DEMO DAY" POLISH (CSS ONLY)
+   ========================================= */
+
+/* 1. Page Slide-In Animation */
+/* This makes the main content slide up smoothly when loaded */
+.main-content, .results-area {
+  animation: pageSlideUp 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes pageSlideUp {
+  0% { 
+    opacity: 0; 
+    transform: translateY(40px); 
+  }
+  100% { 
+    opacity: 1; 
+    transform: translateY(0); 
+  }
+}
+
+/* 2. Staggered List Loading (The "Waterfall") */
+/* This targets song rows to make them appear one by one */
+.song-row, .card, .song-item {
+  opacity: 0; /* Hidden by default */
+  animation: itemFadeIn 0.5s ease forwards;
+}
+
+@keyframes itemFadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Delays for the first 10 items */
+.song-row:nth-child(1) { animation-delay: 0.1s; }
+.song-row:nth-child(2) { animation-delay: 0.15s; }
+.song-row:nth-child(3) { animation-delay: 0.2s; }
+.song-row:nth-child(4) { animation-delay: 0.25s; }
+.song-row:nth-child(5) { animation-delay: 0.3s; }
+.song-row:nth-child(6) { animation-delay: 0.35s; }
+
+/* 3. Interactive Cards */
+.card, .playlist-card {
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover, .playlist-card:hover {
+  transform: translateY(-8px); /* Lifts up */
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* 4. Button Click Effect */
+button:active, .play-circle:active {
+  transform: scale(0.92); /* Satisfying click press */
+}
+
+/* 5. Scrollbar Styling (Premium Look) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #121212; 
+}
+::-webkit-scrollbar-thumb {
+  background: #444; 
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #666; 
+}
+/* =======================================================
+   THE "CYBER-POLISH" SUITE (Animation Engine)
+   ======================================================= */
+
+/* --- 1. THE "DATA WATERFALL" (For Search & AI Results) --- */
+/* This forces every list item to slide in with a delay */
+
+.results-area .song-item, 
+.search-page .song-row, 
+.search-page .card {
+  opacity: 0; /* Start hidden */
+  animation: dataSlideUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; /* Bouncy effect */
+  border: 1px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes dataSlideUp {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+/* The Waterfall Delays (First 8 items) */
+.song-item:nth-child(1), .song-row:nth-child(1) { animation-delay: 0.1s; }
+.song-item:nth-child(2), .song-row:nth-child(2) { animation-delay: 0.15s; }
+.song-item:nth-child(3), .song-row:nth-child(3) { animation-delay: 0.2s; }
+.song-item:nth-child(4), .song-row:nth-child(4) { animation-delay: 0.25s; }
+.song-item:nth-child(5), .song-row:nth-child(5) { animation-delay: 0.3s; }
+.song-item:nth-child(6), .song-row:nth-child(6) { animation-delay: 0.35s; }
+.song-item:nth-child(7), .song-row:nth-child(7) { animation-delay: 0.4s; }
+.song-item:nth-child(8), .song-row:nth-child(8) { animation-delay: 0.45s; }
+
+
+/* --- 2. THE "HOLOGRAPHIC SCANNER" (Pseudo Loading Effect) --- */
+/* This creates a light shine that moves across images when they load */
+
+.song-item img, .card img, .exp-art-box img {
+  position: relative;
+  overflow: hidden;
+}
+
+.song-item img::after, .card img::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-25deg);
+  animation: shineScan 2s infinite;
+  pointer-events: none;
+}
+
+@keyframes shineScan {
+  0% { left: -100%; }
+  20% { left: 200%; } /* Fast scan */
+  100% { left: 200%; } /* Wait */
+}
+
+
+/* --- 3. THE "AI PULSE" (For the AI Input Box) --- */
+/* Makes the input feel alive/listening */
+
+input[type="text"] {
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+input[type="text"]:focus {
+  background: #222 !important;
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.2);
+  border: 1px solid rgba(0, 198, 255, 0.5);
+  transform: scale(1.01);
+}
+
+/* The Send Button Pulse */
+button i.fa-paper-plane {
+  animation: pulseIcon 2s infinite;
+}
+
+@keyframes pulseIcon {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.2); opacity: 0.8; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+
+/* --- 4. THE "SKELETON GLOW" (Loading State Simulation) --- */
+/* When the AI is thinking, the results container glows */
+
+.results-area {
+  position: relative;
+}
+
+.results-area::before {
+  content: "";
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  background: linear-gradient(45deg, #00C6FF, #0072FF, #00C6FF);
+  z-index: -1;
+  background-size: 400%;
+  border-radius: 10px;
+  opacity: 0;
+  animation: borderGlow 2s linear infinite;
+}
+
+/* Only show the glow when the results appear (makes it look "fresh") */
+.results-area {
+  animation: borderFadeIn 1s ease 0.5s forwards; 
+}
+
+@keyframes borderGlow {
+  0% { background-position: 0 0; }
+  50% { background-position: 100% 0; }
+  100% { background-position: 0 0; }
+}
+
+/* ==============================================
+   AI PAGE "SOUL" PACK (Animations)
+   ============================================== */
+
+/* 1. THE AI BRAIN (The Header Icon) */
+/* Finds the gradient circle behind the icon and makes it breathe */
+div[style*="linear-gradient"] {
+  animation: soulPulse 3s infinite ease-in-out;
+  box-shadow: 0 0 20px rgba(66, 133, 244, 0.4);
+}
+
+@keyframes soulPulse {
+  0% { transform: scale(1); box-shadow: 0 0 20px rgba(66, 133, 244, 0.4); }
+  50% { transform: scale(1.1); box-shadow: 0 0 40px rgba(66, 133, 244, 0.8); }
+  100% { transform: scale(1); box-shadow: 0 0 20px rgba(66, 133, 244, 0.4); }
+}
+
+/* 2. THE INPUT BAR (Entry Animation) */
+input[type="text"] {
+  opacity: 0;
+  animation: slideUpFade 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s forwards;
+}
+
+/* 3. THE TAGS (Staggered Entry) */
+/* This targets the buttons below the input */
+div[style*="flex-wrap"] button {
+  opacity: 0;
+  transform: translateY(15px);
+  animation: popIn 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+/* Delay them one by one so they "pop" in */
+div[style*="flex-wrap"] button:nth-child(1) { animation-delay: 0.3s; }
+div[style*="flex-wrap"] button:nth-child(2) { animation-delay: 0.4s; }
+div[style*="flex-wrap"] button:nth-child(3) { animation-delay: 0.5s; }
+div[style*="flex-wrap"] button:nth-child(4) { animation-delay: 0.6s; }
+
+@keyframes popIn {
+  from { opacity: 0; transform: translateY(15px) scale(0.9); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 4. THE LOADING STATE (The "Thinking" Text) */
+/* Targets the status text when AI is working */
+div[style*="color: #1db954"], 
+div[style*="color: rgb(29, 185, 84)"] {
+  animation: glowText 1.5s infinite alternate;
+}
+
+@keyframes glowText {
+  from { opacity: 0.6; text-shadow: 0 0 0px #1db954; }
+  to { opacity: 1; text-shadow: 0 0 10px #1db954; }
+}
+
+/* 5. THE RESULTS (Holographic Entry) */
+.results-area {
+  perspective: 1000px;
+}
+
+.song-item {
+  opacity: 0;
+  transform-origin: top center;
+  animation: hologramUnfold 0.5s ease forwards;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+@keyframes hologramUnfold {
+  0% { 
+    opacity: 0; 
+    transform: rotateX(-30deg) translateY(-20px) scale(0.9);
+    filter: blur(10px);
+  }
+  100% { 
+    opacity: 1; 
+    transform: rotateX(0) translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
